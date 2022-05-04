@@ -22,20 +22,21 @@ header .container{
     flex-direction: row;
     align-items: center;
     justify-content: space-between;
+    padding: 5px;
     
 }
 
 header .logo{
     margin-left: 5px;
     color: var(--vermelho);
-    font-family: 'Arial Black', Times;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif   ;
     font-size:40px;
 }
 
 header nav a{
     text-decoration:none;
     color:#AAA;
-    margin-right: 10px;
+    margin-right: 20px;
 }
 
 
@@ -46,9 +47,9 @@ header nav a:hover{
 /*filme principal*/
 .filme-principal{
     font-size:16px;
-    background: linear-gradient(rgba(0,0,0,.50),rgba(0,0,0,.50)100%),  url('/img/capa-house.jpg');
+    background: linear-gradient(rgba(0,0,0,.50),rgba(0,0,0,.50)),  url('/img/guerramundialz.jpg');
 
-    height:400px;
+    height: 750px;
     background-size:cover;
  
 
@@ -91,13 +92,17 @@ header nav a:hover{
 
 .botao i{
     margin-right: 8px;
+    text-decoration: none;
 }
-
-
 .container{
     margin-left: 20px;
 }
-
+.botao .nome{
+    text-decoration: none;
+}
+.botao .maisinformacoes{
+    text-decoration: none;
+}
 .filme-principal .container{
     width: 70%;
 }
@@ -123,10 +128,66 @@ h4{
     text-decoration: none;
 }
 
-
-
-
-
+footer{
+    position: relative;
+    width: 100%;
+    height: auto;
+    padding: 50px 100px;
+    background: #111;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+footer .rodape{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    flex-direction: row;
+}
+footer .rodape .sec{
+    margin-right: 30px;
+}
+footer .rodape .sec.aboutus{
+    width: 40%;
+}
+footer .rodape .sec.aboutus h2{
+    display: inline-block;
+    position: relative;
+    color: #fff;
+    font-weight: 500;
+    margin-bottom: 15px;
+}
+footer .rodape .sec.aboutus h2::before{
+    content: "";
+    position: absolute;
+    bottom: -5px;
+    left: 0;
+    width: 50px;
+    height: 2px;
+}
+footer p{
+    color: #999;
+}
+.sci{
+    margin-top: 20px;
+    display: flex;
+    padding-left: 750px;    
+}
+.sci li{
+    list-style: none;
+}
+.sci li a {
+    display: inline-block;
+    width: 40px;
+    height: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-right: 10px;
+    text-decoration: none;
+    border-radius: 4px;
+    color: var(--vermelho);
+}
 
 
 
